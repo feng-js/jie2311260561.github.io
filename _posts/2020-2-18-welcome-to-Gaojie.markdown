@@ -4,7 +4,7 @@ title:  "hello Gaojie!"
 date:   2020-02-18 15:14:54
 categories: Gaojie
 tags: Gaojie
-excerpt: 当年创建 Gaojie 时默认的一篇文章，没什么意义，我也一直没删除，留个纪念吧。
+excerpt: 创建 Gaojie.io 时默认的一篇文章，没什么意义，我也一直没删除，留个纪念吧。
 mathjax: true
 ---
 
