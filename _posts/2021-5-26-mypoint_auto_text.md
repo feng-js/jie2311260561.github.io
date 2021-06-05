@@ -46,3 +46,47 @@ main中 判断当前执行的模式（默认为0  当然还有1   或者其他�
 
 
 # 加时间戳  一分半 送一帧   主处理函数不变  
+在另一个线程中创建的 VIDEO_FRAME_INFO_S 好像没有传递过来 转后之后 没有正确处理  
+使用直接创建变量的方法 
+使用malloc 进行内存分配的方法   
+```
+   Mat image;
+     frame2Mat(srcFrm, image);
+     if (image.size != 0){
+        LOGE("frame to mat success\n");
+     }
+```
+直接使用这种方法是可以的
+
+通过逐步加判断的方式将错误定位在  
+s32Ret = HI_MPI_IVE_CSC(&hIveHandle, &pstSrc, &pstDst, &stCscCtrl, bInstant);  
+这一句，但是看不多这句是干什么用的    比较遗憾。。。。    没有转化成功
+
+但是这这一句 的参数意思是   Handle 的头   ps str 的地址   DSt 的纸质  C特人了
+的地址   最后不知道放在那里  可以 干什么
+
+
+ 但是这句 如果不成功就会 free 掉刚才 变量的地址空间  如果成功了就转到 下一句  下一句是干什么的也不是很清晰 明白  
+
+
+ 这块转换过程中的问题  不是很清楚式什么问题  
+
+使用  在主程序里    使用这两个结构体  进行传输 
+typedef struct tagIPC_IMAGE{
+    HI_U64 u64PhyAddr;
+    HI_U64 u64VirAddr;
+    HI_U32 u32Width;
+    HI_U32 u32Height;
+} IPC_IMAGE;
+
+typedef struct hiIVE_IMAGE_S {
+    HI_U64 au64PhyAddr[3];   /* RW;The physical address of the image */
+    HI_U64 au64VirAddr[3];   /* RW;The virtual address of the image */
+    HI_U32 au32Stride[3];    /* RW;The stride of the image */
+    HI_U32 u32Width;         /* RW;The width of the image */
+    HI_U32 u32Height;        /* RW;The height of the image */
+    IVE_IMAGE_TYPE_E enType; /* RW;The type of the image */
+} IVE_IMAGE_S;
+
+
+ 传这个东西
