@@ -47,7 +47,7 @@ strerror-sym.c 47
 strerror-sym.c:47:9: error: 'errnos_msgstr' undeclared (first use in this function)
   return errnos_msgstr + errnos_msgidx[idx];
          ^~~~~~~~~~~~~
-strerror-sym.c:47:9: note: each undeclared identifier is reported only once for eac                                                                                                                           h function it appears in
+strerror-sym.c:47:9: note: each undeclared identifier is reported only once for each function it appears in
 strerror-sym.c:47:25: error: 'errnos_msgidx' undeclared (first use in this function                                                                                                                           )
   return errnos_msgstr + errnos_msgidx[idx];
                          ^~~~~~~~~~~~~
@@ -418,4 +418,18 @@ chgrp -R hxls gcn/
 
 然而我自己的修改方式
 sudo chown jie:jie lost+found
+```
+
+
+# d1 sdk 本来的地方
+
+```
+build   Config.in  dl      logs      out      prebuilt  scripts  toolchain
+config  device     lichee  Makefile  package  rules.mk  target   tools
+
+
+build      device  logs      package   scripts  toolchain
+config     dl      Makefile  prebuilt  target   tools
+Config.in  lichee  out       rules.mk  tmp
+
 ```
