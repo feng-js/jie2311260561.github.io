@@ -1,8 +1,19 @@
+---
+layout: post
+title:  "全志科技D1哪吒SDk 下载编译使用及收获"
+date:   2021-07-06 18：54
+categories: Ubuntu
+tags: Ubuntu20.04 
+excerpt: 下载来全志官方SDK编译过程中的小细节
+---
+
+
+
+```
 opencv_aruco430.lib opencv_bgsegm430.lib opencv_bioinspired430.lib opencv_calib3d430.lib opencv_ccalib430.lib opencv_core430.lib opencv_datasets430.lib opencv_dnn430.lib opencv_dnn_objdetect430.lib opencv_dnn_superres430.lib opencv_dpm430.lib opencv_face430.lib opencv_features2d430.lib opencv_flann430.lib opencv_fuzzy430.lib opencv_hfs430.lib opencv_highgui430.lib opencv_imgcodecs430.lib opencv_imgproc430.lib opencv_img_hash430.lib opencv_intensity_transform430.lib opencv_line_descriptor430.lib opencv_ml430.lib opencv_objdetect430.lib opencv_optflow430.lib opencv_phase_unwrapping430.lib opencv_photo430.lib opencv_plot430.lib opencv_quality430.lib opencv_rapid430.lib opencv_reg430.lib opencv_rgbd430.lib opencv_saliency430.lib opencv_shape430.lib opencv_stereo430.lib opencv_stitching430.lib opencv_structured_light430.lib opencv_superres430.lib opencv_surface_matching430.lib opencv_text430.lib opencv_tracking430.lib opencv_video430.lib opencv_videoio430.lib opencv_videostab430.lib opencv_xfeatures2d430.lib opencv_ximgproc430.lib opencv_xobjdetect430.lib opencv_xphoto430.lib
+```
 
-
-
-配置环境变量
+**配置环境变量**
 
 
 
