@@ -89,4 +89,30 @@ typedef struct hiIVE_IMAGE_S {
 } IVE_IMAGE_S;
 
 
- 传这个东西
+ 传这个东西 没有实现 现在改成传文件名  然后打开文件名的方式
+
+
+
+最后放弃 直接传图片的形式  采用保存文件传文件名的形式
+
+/**
+    读取完整消息.
+*/
+int FdReadMsg(int fd, void* msgBuf, int msgSize);
+
+/**
+    写入完整消息.
+*/
+int FdWriteMsg(int fd, const void* msgData, int msgLen);
+
+
+
+
+在taurus_adapt.c中  591行 有对于当前结构体的定义   static LcdAic g_lcd; 所有的操作都是基于当前封装的结构体
+
+
+目前注释掉了  在 adapt 中的按键 响应函数和 按键  处理及回调函数
+
+
+按键处理函数使用 扫描或者回调的方法   个人觉得扫描的方法 好像不是很好用 使用添加fd回调的方法 试试
+在回调中要将fd中的所有内容全部抛出   确保不会重复按下异常
