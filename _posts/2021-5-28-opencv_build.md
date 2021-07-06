@@ -6,6 +6,8 @@ categories: Vscode
 tags: Opencv
 excerpt: 编译opencv cmake 配置的注意事项及问题
 ---
+
+
 # 创建Vs工程进行编译  设定 OPENCVMODULESPATH的参数
 
 取消勾选 pytohn  和 java 的包 因为不需要  
