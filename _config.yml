@@ -16,20 +16,20 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: #gaohaoyang126
 facebook_username: #gaohaoyang.water
-github_username:  643435675
-email: 2311260561@QQ.com
-weibo_username: 桀骜不驯_杰杰
-zhihu_username: 
+github_username:  BedRockJie
+email: 2311260561@qq.com
+weibo_username: BedRockJie
+zhihu_username: 保护憨憨从我做起 
 linkedIn_username: 
 dribbble_username:
 
-description_footer: 来自高杰的个人专栏！
+description_footer: BedRockJie！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
 # 两种评论插件，选一个就好了，使用自己的 short_name
 duoshuo_shortname: #hygblog
-disqus_shortname: #gaohaoyang
+disqus_shortname: BedRock
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
