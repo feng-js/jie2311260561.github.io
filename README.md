@@ -43,7 +43,6 @@ With the escalation of jekyll version, but I also want to reconstruct my older b
     - [4. Write post](#4-write-post)
     - [5. Local launch](#5-local-launch)
     - [6. Push to GitHub](#6-push-to-github)
-  - [Donate](#donate)
   - [Update Log](#update-log)
     - [2017.2.28](#2017228)
     - [2016.6.20](#2016620)
@@ -306,16 +305,6 @@ Visit localhost:4000 to see your blog!!!
 
 If there is nothing wrong, push code to your github!
 
-## Donate
-
-You can also donate me for a coffee, and I'll do better. Thanks.
-
-|                                                                     PayPal                                                                     |                                 Wechat Pay                                  |                                   Alipay                                    |
-|:----------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
-| [![PayPal](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)<br>Donate via PayPal ](https://www.paypal.me/gaohaoyang) | ![wechat](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bkdw3bslj206z06q3z6.jpg) | ![alipay](http://ww2.sinaimg.cn/large/7011d6cfjw1f3bk8ikzoij20740743z5.jpg) |
-
-
-Thanks these friends!!!
 
 
 
